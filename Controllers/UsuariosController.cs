@@ -6,9 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using easyjob22.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace easyjob22.Controllers
-{
+{[Authorize]
     public class UsuariosController : Controller
     {
         private readonly EasyjobContext _context;
